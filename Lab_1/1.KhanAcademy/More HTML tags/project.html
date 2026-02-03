@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Recipes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c05621;
+        }
+
+        h2 {
+            color: #9c4221;
+        }
+
+        h3 {
+            color: #7b341e;
+        }
+
+        .toc {
+            background-color: #fde68a;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #92400e;
+            font-weight: bold;
+        }
+
+        .toc li {
+            margin: 8px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #d97706;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #fbbf24;
+        }
+
+        ul, ol {
+            background-color: #fffbeb;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .recipe {
+            margin-top: 40px;
+        }
+
+        .source {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🍲 My Favorite Recipe Book</h1>
+
+<!-- Table of Contents -->
+<div class="toc">
+    <h2>📖 Table of Contents</h2>
+    <ul>
+        <li><a href="#pancakes">🥞 Pancakes</a></li>
+        <li><a href="#pizza">🍕 Margherita Pizza</a></li>
+        <li><a href="#salad">🥗 Caesar Salad</a></li>
+    </ul>
+</div>
+
+<!-- Recipe 1 -->
+<div class="recipe" id="pancakes">
+    <h2>🥞 Pancakes</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Stack_of_pancakes.jpg" alt="Pancakes">
+
+    <h3>Ingredients</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Flour</td>
+            <td>1 cup</td>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>1 cup</td>
+        </tr>
+        <tr>
+            <td>Egg</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Sugar</td>
+            <td>2 tbsp</td>
+        </tr>
+    </table>
+
+    <h3>Details</h3>
+    <ul>
+        <li>Preparation time: 10 minutes</li>
+        <li>Cooking time: 15 minutes</li>
+        <li>Serves: 2 people</li>
+    </ul>
+
+    <h3>Steps</h3>
+    <ol>
+        <li>Mix all ingredients in a bowl.</li>
+        <li>Heat a pan and add a little oil.</li>
+        <li>Pour batter and cook until golden.</li>
+        <li>Flip and cook the other side.</li>
+    </ol>
+
+    <p class="source">
+        Source: <a href="https://en.wikipedia.org/wiki/Pancake" target="_blank">Wikipedia</a>
+    </p>
+</div>
+
+<!-- Recipe 2 -->
+<div class="recipe" id="pizza">
+    <h2>🍕 Margherita Pizza</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Margherita_Originale.jpg" alt="Pizza">
+
+    <h3>Ingredients</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Pizza dough</td>
+            <td>1 base</td>
+        </tr>
+        <tr>
+            <td>Tomato sauce</td>
+            <td>½ cup</td>
+        </tr>
+        <tr>
+            <td>Mozzarella</td>
+            <td>150 g</td>
+        </tr>
+        <tr>
+            <td>Basil</td>
+            <td>Few leaves</td>
+        </tr>
+    </table>
+
+    <h3>Details</h3>
+    <ul>
+        <li>Preparation time: 20 minutes</li>
+        <li>Baking time: 15 minutes</li>
+        <li>Origin: Italy</li>
+    </ul>
+
+    <h3>Steps</h3>
+    <ol>
+        <li>Spread tomato sauce on the dough.</li>
+        <li>Add mozzarella cheese.</li>
+        <li>Bake in oven at 220°C.</li>
+        <li>Add basil before serving.</li>
+    </ol>
+
+    <p class="source">
+        Source: <a href="https://en.wikipedia.org/wiki/Pizza_Margherita" target="_blank">Wikipedia</a>
+    </p>
+</div>
+
+<!-- Recipe 3 -->
+<div class="recipe" id="salad">
+    <h2>🥗 Caesar Salad</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Caesar_salad_%282%29.jpg" alt="Caesar Salad">
+
+    <h3>Ingredients</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Romaine lettuce</td>
+            <td>1 head</td>
+        </tr>
+        <tr>
+            <td>Croutons</td>
+            <td>1 cup</td>
+        </tr>
+        <tr>
+            <td>Parmesan</td>
+            <td>50 g</td>
+        </tr>
+        <tr>
+            <td>Caesar dressing</td>
+            <td>½ cup</td>
+        </tr>
+    </table>
+
+    <h3>Steps</h3>
+    <p>
+        Wash and chop the lettuce. Add croutons and parmesan cheese.
+        Pour Caesar dressing and mix well before serving.
+    </p>
+
+    <p class="source">
+        Source: <a href="https://en.wikipedia.org/wiki/Caesar_salad" target="_blank">Wikipedia</a>
+    </p>
+</div>
+
+</body>
+</html>
