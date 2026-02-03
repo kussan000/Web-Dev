@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #fff;
+  padding: 20px;
+  width: 350px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.link {
+  display: block;
+  margin-top: 10px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.create {
+  display: inline-block;
+  margin-top: 10px;
+  background: #42b72a;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
