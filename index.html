@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Check age</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background: #111;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            width: 200px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Registrition</h2>
+
+        <form onsubmit="return checkAge()">
+            <div>
+                <label>Name</label><br>
+                <input type="text" id="name" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Age</label><br>
+                <input type="number" id="age" required>
+            </div>
+
+            <button type="submit">Welcome</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        alert("Hello, World!")
+    </script>
+
+    <script>
+        function checkAge() {
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+            const message = document.getElementById("message");
+
+            if (age < 18) {
+                message.style.color = "red";
+                message.textContent = "Error: not 18 years old";
+            } else {
+                message.style.color = "lime";
+                message.textContent = "Welcome, " + name + "!";
+            }
+
+            return false;
+        }
+    </script>
+
+</body>
+</html>
