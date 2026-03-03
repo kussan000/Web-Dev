@@ -1,0 +1,15 @@
+<div class="card">
+  <img [src]="product.image" [alt]="product.name">
+  <h3>{{ product.name }}</h3>
+  <p class="desc">{{ product.description }}</p>
+  <div class="rating">⭐ {{ product.rating }}</div>
+  <div class="price">{{ product.price | number }} KZT</div>
+
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="buy-btn">View on Kaspi</a>
+    <div class="share-btns">
+      <button (click)="shareToWhatsApp()">WA</button>
+      <button (click)="shareToTelegram()">TG</button>
+    </div>
+  </div>
+</div>

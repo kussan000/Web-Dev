@@ -1,0 +1,10 @@
+<div class="back" [routerLink]="['/albums', id()]">
+  Back
+</div>
+<div class="album-photos">
+  @for (photoUrl of albumPhotos(); track photoUrl) {
+    <div class="photo">
+      <img ngSrc="{{ photoUrl }}" alt="album photo" fill>
+    </div>
+  }
+</div>

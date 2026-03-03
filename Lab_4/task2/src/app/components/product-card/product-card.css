@@ -1,0 +1,28 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.price {
+  font-weight: bold;
+  color: #e11;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.buy-btn {
+  display: block;
+  background: #0089d0;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+}

@@ -1,0 +1,8 @@
+<div class="grid-container">
+  @for (p of products; track p.id) {
+    <app-product-card [product]="p">
+    </app-product-card>
+  } @empty {
+    <p>No products found</p>
+  }
+</div>
