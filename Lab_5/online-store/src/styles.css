@@ -1,1 +1,140 @@
 /* You can add global styles to this file, and also import other style files */
+/* --- Базовые настройки --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* --- Заголовки --- */
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+/* --- Контейнер --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Сетка товаров --- */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* --- Карточка товара --- */
+.product-card {
+    background: linear-gradient(145deg, #ffffff, #e6f0ff);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* --- Название и описание --- */
+.product-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* --- Цена --- */
+.product-card .price {
+    font-weight: 600;
+    color: #007BFF;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* --- Кнопка --- */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #007BFF, #00c6ff);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Корзина --- */
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.cart:hover {
+    transform: translateY(-3px);
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* --- Дополнительно: плавное появление товаров --- */
+.product-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
