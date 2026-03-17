@@ -1,4 +1,3 @@
-# main.py
 from models import Vehicle, Car, Motorcycle
 
 def main():
