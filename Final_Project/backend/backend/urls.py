@@ -17,6 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.urls import path, include
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("API работает 🚀")
+
 urlpatterns = [
+    path('', home),
     path('admin/', admin.site.urls),
+    path('api/', include('api.urls')),
+    path('api/login/', TokenObtainPairView.as_view()),
 ]
+
+

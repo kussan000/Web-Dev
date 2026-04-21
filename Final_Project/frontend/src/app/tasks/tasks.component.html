@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>My Tasks</h2>
+
+  <div class="add-box">
+    <input [(ngModel)]="title" placeholder="New task">
+    <button (click)="add()">Add</button>
+  </div>
+
+  <div class="task" *ngFor="let t of tasks">
+    <span>{{t.title}}</span>
+    <button class="delete" (click)="delete(t.id)">✖</button>
+  </div>
+
+  <button class="logout" (click)="logout()">Logout</button>
+</div>
